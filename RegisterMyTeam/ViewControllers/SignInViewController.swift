@@ -32,6 +32,8 @@ class SignInViewController: UIViewController {
     
     
     @IBAction func signInButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "toAthleteUserFlow", sender: self)
+        
     }
     /*
     // MARK: - Navigation

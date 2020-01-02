@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B36-Hl-8fr">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -442,6 +443,10 @@
                         <outlet property="passwordTextField" destination="rNo-N9-rVQ" id="U2S-k6-KQH"/>
                         <outlet property="rememberMeSwitch" destination="rD0-l1-RUp" id="hP2-9x-t1j"/>
                         <outlet property="signInButton" destination="0H5-ja-eoZ" id="76d-4p-2Jt"/>
+                        <segue destination="acd-xq-DPr" kind="show" identifier="toAthleteUserFlow" id="E3f-Fe-1ev"/>
+                        <segue destination="XdS-nd-Gkt" kind="show" identifier="toParentUserFlow" id="rS4-QA-9jk"/>
+                        <segue destination="NfK-aY-W67" kind="show" identifier="toCoachUserFlow" id="hF9-yY-jpk"/>
+                        <segue destination="lGa-nX-jXF" kind="show" identifier="toAdminUserFlow" id="M8T-Eg-qYB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jfB-o4-8ag" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -475,7 +480,7 @@
                                 <rect key="frame" x="16" y="118.5" width="382" height="673.5"/>
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gWh-VY-911">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="168"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="168.5"/>
                                     </pickerView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vB0-wv-Bl2">
                                         <rect key="frame" x="0.0" y="192.5" width="382" height="336.5"/>
@@ -565,12 +570,96 @@
                         <outlet property="phoneTextField" destination="BBC-jp-kYb" id="IGO-Lu-EIT"/>
                         <outlet property="rememberMeSwitch" destination="1cc-b5-JYf" id="G11-GL-Kqc"/>
                         <outlet property="signUpButton" destination="SAp-sZ-kdc" id="2yz-gk-CqG"/>
-                        <outlet property="userTypePIckerView" destination="gWh-VY-911" id="Uaw-vO-rA6"/>
+                        <outlet property="userTypePickerView" destination="gWh-VY-911" id="Uaw-vO-rA6"/>
+                        <segue destination="m0i-yx-0oY" kind="show" identifier="toParentUserFlow" id="os8-eo-1Jk"/>
+                        <segue destination="kJS-uT-biJ" kind="show" identifier="toAthleteUserFlow" id="Ixc-vi-vje"/>
+                        <segue destination="4BA-Qp-Te2" kind="show" identifier="toCoachUserFlow" id="Aqz-Cf-UNy"/>
+                        <segue destination="hCm-TD-7Jt" kind="show" identifier="toAdminUserFlow" id="gPy-RA-uON"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YwQ-BW-LHc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3886.9565217391309" y="655.58035714285711"/>
+        </scene>
+        <!--ParentUserFlow-->
+        <scene sceneID="wWg-tu-VC3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ParentUserFlow" id="m0i-yx-0oY" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="YLg-HV-wkp"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1IJ-6A-0dC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4727" y="707"/>
+        </scene>
+        <!--AthleteUserFlow-->
+        <scene sceneID="1BH-U0-KYJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AthleteUserFlow" id="kJS-uT-biJ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Oph-p7-mgq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1VB-Et-sv2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4730" y="757"/>
+        </scene>
+        <!--AdminUserFlow-->
+        <scene sceneID="Sgc-EC-q4R">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AdminUserFlow" id="hCm-TD-7Jt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HNc-9b-lhx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ut-AJ-Xe0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4725" y="598"/>
+        </scene>
+        <!--CoachUserFlow-->
+        <scene sceneID="bL4-md-021">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CoachUserFlow" id="4BA-Qp-Te2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xVk-cm-y7L"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HHZ-lQ-JBM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4725" y="648"/>
+        </scene>
+        <!--ParentUserFlow-->
+        <scene sceneID="oPm-u9-ky1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ParentUserFlow" id="XdS-nd-Gkt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="F0q-xX-3Vr"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qbi-ej-5c6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4775" y="-80"/>
+        </scene>
+        <!--AthleteUserFlow-->
+        <scene sceneID="aO3-iz-N8n">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AthleteUserFlow" id="acd-xq-DPr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="a8X-2Y-512"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i0c-9w-Cn7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4778" y="-29"/>
+        </scene>
+        <!--AdminUserFlow-->
+        <scene sceneID="NM0-gh-jeX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AdminUserFlow" id="lGa-nX-jXF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ehv-3M-2lF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gv4-7S-FkX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4772" y="-189"/>
+        </scene>
+        <!--CoachUserFlow-->
+        <scene sceneID="sqV-sg-1sn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CoachUserFlow" id="NfK-aY-W67" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="FsS-M5-gBG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7CG-7S-uwJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4772" y="-138"/>
         </scene>
     </scenes>
     <resources>

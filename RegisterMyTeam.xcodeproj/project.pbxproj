@@ -22,6 +22,10 @@
 		C4B15F6623BE81D700875028 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B15F6523BE81D700875028 /* SignUpViewController.swift */; };
 		C4B15F6823BE934F00875028 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B15F6723BE934F00875028 /* SceneDelegate.swift */; };
 		C4B15F6923BE934F00875028 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B15F6723BE934F00875028 /* SceneDelegate.swift */; };
+		C4B15F6E23BE99CE00875028 /* ParentUserFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B15F6D23BE99CE00875028 /* ParentUserFlow.storyboard */; };
+		C4B15F7023BE9A2500875028 /* AthleteUserFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B15F6F23BE9A2500875028 /* AthleteUserFlow.storyboard */; };
+		C4B15F7323BE9AE700875028 /* AdminUserFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B15F7223BE9AE700875028 /* AdminUserFlow.storyboard */; };
+		C4B15F7523BE9AF700875028 /* CoachUserFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B15F7423BE9AF700875028 /* CoachUserFlow.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		C4B15F6323BE81CA00875028 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		C4B15F6523BE81D700875028 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		C4B15F6723BE934F00875028 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C4B15F6D23BE99CE00875028 /* ParentUserFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ParentUserFlow.storyboard; sourceTree = "<group>"; };
+		C4B15F6F23BE9A2500875028 /* AthleteUserFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AthleteUserFlow.storyboard; sourceTree = "<group>"; };
+		C4B15F7223BE9AE700875028 /* AdminUserFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminUserFlow.storyboard; sourceTree = "<group>"; };
+		C4B15F7423BE9AF700875028 /* CoachUserFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoachUserFlow.storyboard; sourceTree = "<group>"; };
 		C6FA6DB88C5183C18EF92738 /* Pods_RegisterMyTeamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RegisterMyTeamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE290E1922951925C79E0267 /* Pods-RegisterMyTeam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegisterMyTeam.release.xcconfig"; path = "Target Support Files/Pods-RegisterMyTeam/Pods-RegisterMyTeam.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,7 +121,7 @@
 			children = (
 				C49B7B8923BE46F300B5593B /* AppDelegate.swift */,
 				C4B15F6723BE934F00875028 /* SceneDelegate.swift */,
-				C49B7B8F23BE46F300B5593B /* Main.storyboard */,
+				C4B15F7123BE9AC800875028 /* Storyboards */,
 				C49B7BAB23BE47AA00B5593B /* AppearanceHelper.swift */,
 				C49B7BAD23BE5C6900B5593B /* ViewControllers */,
 				C49B7B9223BE46F500B5593B /* Assets.xcassets */,
@@ -142,6 +150,18 @@
 				C4B15F6523BE81D700875028 /* SignUpViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C4B15F7123BE9AC800875028 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C49B7B8F23BE46F300B5593B /* Main.storyboard */,
+				C4B15F6F23BE9A2500875028 /* AthleteUserFlow.storyboard */,
+				C4B15F6D23BE99CE00875028 /* ParentUserFlow.storyboard */,
+				C4B15F7223BE9AE700875028 /* AdminUserFlow.storyboard */,
+				C4B15F7423BE9AF700875028 /* CoachUserFlow.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		E16CDA6BDF374E81A102F57A /* Pods */ = {
@@ -239,7 +259,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4B15F7023BE9A2500875028 /* AthleteUserFlow.storyboard in Resources */,
+				C4B15F7523BE9AF700875028 /* CoachUserFlow.storyboard in Resources */,
+				C4B15F7323BE9AE700875028 /* AdminUserFlow.storyboard in Resources */,
 				C49B7B9623BE46F500B5593B /* LaunchScreen.storyboard in Resources */,
+				C4B15F6E23BE99CE00875028 /* ParentUserFlow.storyboard in Resources */,
 				C49B7B9323BE46F500B5593B /* Assets.xcassets in Resources */,
 				C49B7B9123BE46F300B5593B /* Main.storyboard in Resources */,
 			);

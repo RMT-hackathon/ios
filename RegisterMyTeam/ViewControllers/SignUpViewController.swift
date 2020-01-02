@@ -8,11 +8,12 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
+    let userTypes = ["Admin", "Coach", "Parent", "Athlete"]
     
     @IBOutlet weak var alreadyAMemberButton: UIButton!
-    @IBOutlet weak var userTypePIckerView: UIPickerView!
+    @IBOutlet weak var userTypePickerView: UIPickerView!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
@@ -26,9 +27,24 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
 
         signUpButton.layer.cornerRadius = 10
+        userTypePickerView.delegate = self
+        userTypePickerView.dataSource = self
     }
     
     
+    // MARK: - User Type Picker View
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return userTypes.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return userTypes[row]
+    }
+
     
     
     @IBAction func rememberSwitchedToggled(_ sender: Any) {
@@ -37,7 +53,15 @@ class SignUpViewController: UIViewController {
     
     
     @IBAction func signUpButtonPressed(_ sender: Any) {
+        
+        
+        
+        
     }
+    
+    // TODO: func signUpUser(user: User)
+    
+    
     
 
     /*
