@@ -11,16 +11,16 @@ import UIKit
 
 enum AppearanceHelper {
     
-    static let brandBlue = UIColor(hue: 237/255, saturation: 99/255, brightness: 32/255, alpha: 1.0)
+    static let brandBlue = UIColor(red: 1/255, green: 5/255, blue: 81/255, alpha: 1.0)
     
-    static let textBlack = UIColor(hue: 0/255, saturation: 0/255, brightness: 20/255, alpha: 1.0)
+    static let textBlack = UIColor(red: 51/255, green: 51/255, blue: 51/255, alpha: 1.0)
     
-    static let blueWhite = UIColor(hue: 191/255, saturation: 5/255, brightness: 94/255, alpha: 1.0)
+    static let blueWhite = UIColor(red: 228/255, green: 237/255, blue: 239/255, alpha: 1.0)
     
-    static let gray = UIColor(hue: 0/255, saturation: 0/255, brightness: 83/255, alpha: 1.0)
+    static let gray = UIColor(red: 211/255, green: 211/255, blue: 211/255, alpha: 1.0)
     
     static let white = UIColor(named: "white")
     
-    static let overlayBlue = UIColor(hue: 237/255, saturation: 99/255, brightness: 32/255, alpha: 0.8)
+    static let overlayBlue = UIColor(red: 1/255, green: 5/255, blue: 81/255, alpha: 0.7)
     
 }
