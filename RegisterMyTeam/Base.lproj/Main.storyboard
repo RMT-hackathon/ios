@@ -183,6 +183,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="3MQ-Y2-zjN" kind="show" id="6IR-JG-6mm"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What it can do..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40P-uR-GcV">
                                 <rect key="frame" x="18" y="108" width="168" height="29"/>
@@ -259,8 +262,75 @@
             </objects>
             <point key="canvasLocation" x="1637.68115942029" y="338.83928571428572"/>
         </scene>
+        <!--Splash3 View Controller-->
+        <scene sceneID="nNy-wy-6Ak">
+            <objects>
+                <viewController id="3MQ-Y2-zjN" customClass="Splash3ViewController" customModule="RegisterMyTeam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="icg-Zf-qCm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash-DesktopSplash" translatesAutoresizingMaskIntoConstraints="NO" id="qag-vV-dth">
+                                <rect key="frame" x="24" y="226" width="366" height="244"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qag-vV-dth" secondAttribute="height" multiplier="9:6" id="ORO-kk-YeC"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="E6R-Re-kSQ">
+                                <rect key="frame" x="16" y="562" width="382" height="163.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUa-9b-xfZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="72"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" red="0.0039215686269999999" green="0.019607843140000001" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXP-bT-a8i">
+                                        <rect key="frame" x="0.0" y="92" width="382" height="71.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" red="0.0039215686269999999" green="0.019607843140000001" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="E6R-Re-kSQ" secondAttribute="height" multiplier="7:3" id="oLK-en-jMG"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How it works" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dA-0V-fFy">
+                                <rect key="frame" x="16" y="105" width="133" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ddp-E5-G6h" firstAttribute="trailing" secondItem="qag-vV-dth" secondAttribute="trailing" constant="24" id="1CR-vr-FR9"/>
+                            <constraint firstItem="ddp-E5-G6h" firstAttribute="trailing" secondItem="E6R-Re-kSQ" secondAttribute="trailing" constant="16" id="F1V-G8-8BU"/>
+                            <constraint firstItem="qag-vV-dth" firstAttribute="leading" secondItem="ddp-E5-G6h" secondAttribute="leading" constant="24" id="Zmv-8I-KEa"/>
+                            <constraint firstItem="qag-vV-dth" firstAttribute="top" secondItem="4dA-0V-fFy" secondAttribute="bottom" constant="92" id="a1R-0m-eaQ"/>
+                            <constraint firstItem="4dA-0V-fFy" firstAttribute="leading" secondItem="ddp-E5-G6h" secondAttribute="leading" constant="16" id="a2C-wV-NtO"/>
+                            <constraint firstItem="qag-vV-dth" firstAttribute="centerY" secondItem="icg-Zf-qCm" secondAttribute="centerY" constant="-100" id="g3j-D9-4St"/>
+                            <constraint firstItem="E6R-Re-kSQ" firstAttribute="leading" secondItem="ddp-E5-G6h" secondAttribute="leading" constant="16" id="jRM-s6-aei"/>
+                            <constraint firstItem="E6R-Re-kSQ" firstAttribute="centerX" secondItem="icg-Zf-qCm" secondAttribute="centerX" id="kQj-b2-fUV"/>
+                            <constraint firstItem="E6R-Re-kSQ" firstAttribute="top" secondItem="qag-vV-dth" secondAttribute="bottom" constant="92" id="wPE-Bz-9M2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ddp-E5-G6h"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ibi-Tb-2UU"/>
+                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xxc-xa-4vZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2480" y="339"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Splash-DesktopSplash" width="313" height="191"/>
         <image name="Splash-Icons-Design" width="93" height="94"/>
         <image name="Splash-Icons-Fashion" width="93" height="94"/>
         <image name="Splash-Icons-Food" width="93" height="94"/>

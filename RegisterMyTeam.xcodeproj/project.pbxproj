@@ -18,6 +18,7 @@
 		C49B7BAC23BE47AA00B5593B /* AppearanceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49B7BAB23BE47AA00B5593B /* AppearanceHelper.swift */; };
 		C49B7BAF23BE5C9000B5593B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49B7BAE23BE5C9000B5593B /* SplashViewController.swift */; };
 		C49B7BB123BE6C3D00B5593B /* Splash2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49B7BB023BE6C3D00B5593B /* Splash2ViewController.swift */; };
+		C4B15F6223BE778900875028 /* Splash3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B15F6123BE778900875028 /* Splash3ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		C49B7BAB23BE47AA00B5593B /* AppearanceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceHelper.swift; sourceTree = "<group>"; };
 		C49B7BAE23BE5C9000B5593B /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		C49B7BB023BE6C3D00B5593B /* Splash2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash2ViewController.swift; sourceTree = "<group>"; };
+		C4B15F6123BE778900875028 /* Splash3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash3ViewController.swift; sourceTree = "<group>"; };
 		C6FA6DB88C5183C18EF92738 /* Pods_RegisterMyTeamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RegisterMyTeamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE290E1922951925C79E0267 /* Pods-RegisterMyTeam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegisterMyTeam.release.xcconfig"; path = "Target Support Files/Pods-RegisterMyTeam/Pods-RegisterMyTeam.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +132,7 @@
 			children = (
 				C49B7BAE23BE5C9000B5593B /* SplashViewController.swift */,
 				C49B7BB023BE6C3D00B5593B /* Splash2ViewController.swift */,
+				C4B15F6123BE778900875028 /* Splash3ViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				C49B7B8C23BE46F300B5593B /* SceneDelegate.swift in Sources */,
 				C49B7BB123BE6C3D00B5593B /* Splash2ViewController.swift in Sources */,
 				C49B7BAF23BE5C9000B5593B /* SplashViewController.swift in Sources */,
+				C4B15F6223BE778900875028 /* Splash3ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
