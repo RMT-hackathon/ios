@@ -39,12 +39,12 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MlN-xz-7d9">
-                                <rect key="frame" x="335" y="743" width="39" height="30"/>
-                                <state key="normal" title="NEXT">
+                                <rect key="frame" x="342" y="743" width="32" height="30"/>
+                                <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="MfA-27-Jrs" kind="show" id="WQd-XI-hXZ"/>
+                                    <segue destination="MfA-27-Jrs" kind="showDetail" id="WQd-XI-hXZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -73,7 +73,7 @@
         <!--Splash2 View Controller-->
         <scene sceneID="SmE-0A-g5W">
             <objects>
-                <viewController id="MfA-27-Jrs" customClass="Splash2ViewController" customModule="RegisterMyTeam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="MfA-27-Jrs" customClass="Splash2ViewController" customModule="RegisterMyTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="epq-w5-iBD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,9 +177,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Urc-yy-g3S">
-                                <rect key="frame" x="355" y="738" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Urc-yy-g3S">
+                                <rect key="frame" x="342" y="743" width="32" height="30"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -199,15 +198,17 @@
                             <constraint firstItem="40P-uR-GcV" firstAttribute="leading" secondItem="v5n-at-y4a" secondAttribute="leading" constant="18" id="2mJ-SQ-xRh"/>
                             <constraint firstItem="40P-uR-GcV" firstAttribute="width" secondItem="epq-w5-iBD" secondAttribute="width" multiplier="0.405797" id="9y4-km-kn3"/>
                             <constraint firstItem="J6L-zO-Orc" firstAttribute="top" secondItem="40P-uR-GcV" secondAttribute="bottom" constant="132" id="GmT-et-WUZ"/>
+                            <constraint firstItem="v5n-at-y4a" firstAttribute="trailing" secondItem="Urc-yy-g3S" secondAttribute="trailing" constant="40" id="RJ8-Bj-dzb"/>
                             <constraint firstItem="KEx-7x-gdq" firstAttribute="leading" secondItem="v5n-at-y4a" secondAttribute="leading" constant="18" id="XQv-tR-otP"/>
                             <constraint firstItem="KEx-7x-gdq" firstAttribute="centerY" secondItem="epq-w5-iBD" secondAttribute="centerY" id="fKb-eO-q9L"/>
                             <constraint firstItem="v5n-at-y4a" firstAttribute="trailing" secondItem="KEx-7x-gdq" secondAttribute="trailing" constant="18" id="m5W-jH-pnk"/>
                             <constraint firstItem="KEx-7x-gdq" firstAttribute="height" secondItem="epq-w5-iBD" secondAttribute="height" multiplier="0.399554" id="qqa-hj-g6e"/>
+                            <constraint firstItem="v5n-at-y4a" firstAttribute="bottom" secondItem="Urc-yy-g3S" secondAttribute="bottom" constant="40" id="t5Q-63-qyX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="v5n-at-y4a"/>
                     </view>
                     <navigationItem key="navigationItem" id="mma-It-g8E"/>
-                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
                 </viewController>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="26" id="5pv-9J-Gm7">
                     <rect key="frame" x="0.0" y="0.0" width="256" height="92.5"/>
@@ -265,7 +266,7 @@
         <!--Splash3 View Controller-->
         <scene sceneID="nNy-wy-6Ak">
             <objects>
-                <viewController id="3MQ-Y2-zjN" customClass="Splash3ViewController" customModule="RegisterMyTeam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="3MQ-Y2-zjN" customClass="Splash3ViewController" customModule="RegisterMyTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="icg-Zf-qCm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -323,6 +324,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ibi-Tb-2UU"/>
                     <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="signInButton" destination="JUa-9b-xfZ" id="uC8-NI-a70"/>
+                        <outlet property="signUpButton" destination="DXP-bT-a8i" id="geR-he-Vea"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xxc-xa-4vZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

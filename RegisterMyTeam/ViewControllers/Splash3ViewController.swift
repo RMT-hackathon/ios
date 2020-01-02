@@ -10,11 +10,33 @@ import UIKit
 
 class Splash3ViewController: UIViewController {
 
+    
+    @IBOutlet weak var signInButton: UIButton!
+    
+    @IBOutlet weak var signUpButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setupBackgroundImage()
+        
+        //signInButton.backgroundColor = AppearanceHelper.blueWhite
+        
+        //signUpButton.backgroundColor = AppearanceHelper.blueWhite
     }
+    
+   func setupBackgroundImage() {
+       let backgroundImageView = UIImageView(frame: self.view.frame)
+       backgroundImageView.image = UIImage(named: "SplashBackground")
+       backgroundImageView.contentMode = .scaleToFill
+       
+       let overlayView = UIView(frame: self.view.frame)
+       overlayView.backgroundColor = AppearanceHelper.overlayBlue
+       backgroundImageView.addSubview(overlayView)
+       
+
+       self.view.insertSubview(backgroundImageView, at: 0)
+   }
     
 
     /*

@@ -13,9 +13,22 @@ class Splash2ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setupBackgroundImage()
     }
     
+    
+   func setupBackgroundImage() {
+       let backgroundImageView = UIImageView(frame: self.view.frame)
+       backgroundImageView.image = UIImage(named: "SplashBackground")
+       backgroundImageView.contentMode = .scaleToFill
+       
+       let overlayView = UIView(frame: self.view.frame)
+       overlayView.backgroundColor = AppearanceHelper.overlayBlue
+       backgroundImageView.addSubview(overlayView)
+       
+
+       self.view.insertSubview(backgroundImageView, at: 0)
+   }
 
     /*
     // MARK: - Navigation
