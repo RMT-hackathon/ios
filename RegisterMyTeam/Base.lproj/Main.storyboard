@@ -14,13 +14,259 @@
                     <view key="view" contentMode="scaleToFill" id="Rr7-6z-V7q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashTitle" translatesAutoresizingMaskIntoConstraints="NO" id="qJS-hS-lBX">
+                                <rect key="frame" x="17" y="208.5" width="380" height="203"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qJS-hS-lBX" secondAttribute="height" multiplier="15:8" id="FTF-LK-UUB"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="qyT-ba-8QB">
+                                <rect key="frame" x="17" y="501.5" width="380" height="102.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6J4-sN-tP0">
+                                        <rect key="frame" x="0.0" y="0.0" width="380" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Popular Categories, Free Google fonts - Lato &amp; Lora, Well Organized Files" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08M-rE-bPf">
+                                        <rect key="frame" x="0.0" y="64" width="380" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MlN-xz-7d9">
+                                <rect key="frame" x="335" y="743" width="39" height="30"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MfA-27-Jrs" kind="show" id="WQd-XI-hXZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qJS-hS-lBX" firstAttribute="centerX" secondItem="Rr7-6z-V7q" secondAttribute="centerX" id="5iE-Th-UlW"/>
+                            <constraint firstItem="pzR-rQ-TTp" firstAttribute="trailing" secondItem="MlN-xz-7d9" secondAttribute="trailing" constant="40" id="CQx-HB-jbt"/>
+                            <constraint firstAttribute="trailing" secondItem="qyT-ba-8QB" secondAttribute="trailing" constant="17" id="J7W-hZ-61r"/>
+                            <constraint firstItem="qyT-ba-8QB" firstAttribute="top" secondItem="qJS-hS-lBX" secondAttribute="bottom" constant="90" id="KuV-Rd-CzG"/>
+                            <constraint firstItem="pzR-rQ-TTp" firstAttribute="trailing" secondItem="qJS-hS-lBX" secondAttribute="trailing" constant="17" id="NHn-8a-vcf"/>
+                            <constraint firstItem="qyT-ba-8QB" firstAttribute="centerX" secondItem="Rr7-6z-V7q" secondAttribute="centerX" id="Qrf-wX-aNO"/>
+                            <constraint firstItem="pzR-rQ-TTp" firstAttribute="bottom" secondItem="MlN-xz-7d9" secondAttribute="bottom" constant="40" id="gdw-aZ-xaJ"/>
+                            <constraint firstItem="qyT-ba-8QB" firstAttribute="leading" secondItem="Rr7-6z-V7q" secondAttribute="leading" constant="17" id="isG-0c-BNg"/>
+                            <constraint firstItem="qJS-hS-lBX" firstAttribute="leading" secondItem="pzR-rQ-TTp" secondAttribute="leading" constant="17" id="jN2-jn-8IN"/>
+                            <constraint firstItem="qJS-hS-lBX" firstAttribute="top" secondItem="pzR-rQ-TTp" secondAttribute="top" multiplier="4:3" constant="150" id="wmd-kb-9mj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pzR-rQ-TTp"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j5q-f5-LGk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="774" y="339"/>
         </scene>
+        <!--Splash2 View Controller-->
+        <scene sceneID="SmE-0A-g5W">
+            <objects>
+                <viewController id="MfA-27-Jrs" customClass="Splash2ViewController" customModule="RegisterMyTeam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="epq-w5-iBD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="KEx-7x-gdq">
+                                <rect key="frame" x="18" y="269" width="378" height="358"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="J6L-zO-Orc">
+                                        <rect key="frame" x="0.0" y="0.0" width="378" height="166"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="1vm-5x-ko1">
+                                                <rect key="frame" x="0.0" y="0.0" width="108.5" height="166"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash-Icons-Sports" translatesAutoresizingMaskIntoConstraints="NO" id="vf2-jJ-PgY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="108.5" height="119.5"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sport" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VR6-iR-xVs">
+                                                        <rect key="frame" x="0.0" y="135.5" width="108.5" height="30.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="61n-qM-pXA">
+                                                <rect key="frame" x="134.5" y="0.0" width="109" height="166"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash-Icons-Fashion" translatesAutoresizingMaskIntoConstraints="NO" id="AF1-ym-MGS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="109" height="119.5"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fashion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AO-Eo-mdP">
+                                                        <rect key="frame" x="0.0" y="135.5" width="109" height="30.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="clm-pm-CKo">
+                                                <rect key="frame" x="269.5" y="0.0" width="108.5" height="166"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash-Icons-Food" translatesAutoresizingMaskIntoConstraints="NO" id="NTu-Ph-d4T">
+                                                        <rect key="frame" x="0.0" y="0.0" width="108.5" height="119.5"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVO-10-O7u">
+                                                        <rect key="frame" x="0.0" y="135.5" width="108.5" height="30.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="82e-tq-uZV">
+                                        <rect key="frame" x="0.0" y="192" width="378" height="166"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="pCL-CV-CRk">
+                                                <rect key="frame" x="0.0" y="0.0" width="108.5" height="166"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash-Icons-Design" translatesAutoresizingMaskIntoConstraints="NO" id="QvQ-de-4j5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="108.5" height="119.5"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Design" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rka-AU-KZK">
+                                                        <rect key="frame" x="0.0" y="135.5" width="108.5" height="30.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Eig-nO-i7b">
+                                                <rect key="frame" x="134.5" y="0.0" width="109" height="166"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash-Icons-Music" translatesAutoresizingMaskIntoConstraints="NO" id="WAT-iQ-QzP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="109" height="119.5"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zuk-6o-yvl">
+                                                        <rect key="frame" x="0.0" y="135.5" width="109" height="30.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="UAF-mA-nrt">
+                                                <rect key="frame" x="269.5" y="0.0" width="108.5" height="166"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash-Icons-Travel" translatesAutoresizingMaskIntoConstraints="NO" id="M7X-TW-G8k">
+                                                        <rect key="frame" x="0.0" y="0.0" width="108.5" height="119.5"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gef-DC-jcu">
+                                                        <rect key="frame" x="0.0" y="135.5" width="108.5" height="30.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Urc-yy-g3S">
+                                <rect key="frame" x="355" y="738" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What it can do..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40P-uR-GcV">
+                                <rect key="frame" x="18" y="108" width="168" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="40P-uR-GcV" firstAttribute="leading" secondItem="v5n-at-y4a" secondAttribute="leading" constant="18" id="2mJ-SQ-xRh"/>
+                            <constraint firstItem="40P-uR-GcV" firstAttribute="width" secondItem="epq-w5-iBD" secondAttribute="width" multiplier="0.405797" id="9y4-km-kn3"/>
+                            <constraint firstItem="J6L-zO-Orc" firstAttribute="top" secondItem="40P-uR-GcV" secondAttribute="bottom" constant="132" id="GmT-et-WUZ"/>
+                            <constraint firstItem="KEx-7x-gdq" firstAttribute="leading" secondItem="v5n-at-y4a" secondAttribute="leading" constant="18" id="XQv-tR-otP"/>
+                            <constraint firstItem="KEx-7x-gdq" firstAttribute="centerY" secondItem="epq-w5-iBD" secondAttribute="centerY" id="fKb-eO-q9L"/>
+                            <constraint firstItem="v5n-at-y4a" firstAttribute="trailing" secondItem="KEx-7x-gdq" secondAttribute="trailing" constant="18" id="m5W-jH-pnk"/>
+                            <constraint firstItem="KEx-7x-gdq" firstAttribute="height" secondItem="epq-w5-iBD" secondAttribute="height" multiplier="0.399554" id="qqa-hj-g6e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v5n-at-y4a"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mma-It-g8E"/>
+                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="26" id="5pv-9J-Gm7">
+                    <rect key="frame" x="0.0" y="0.0" width="256" height="92.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="JhC-br-cDC">
+                            <rect key="frame" x="0.0" y="0.0" width="68" height="92.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D6D-na-brI">
+                                    <rect key="frame" x="0.0" y="0.0" width="68" height="56"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxD-bd-UhK">
+                                    <rect key="frame" x="0.0" y="72" width="68" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2ko-Jb-zdV">
+                            <rect key="frame" x="94" y="0.0" width="68" height="92.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dpU-sp-T46">
+                                    <rect key="frame" x="0.0" y="0.0" width="68" height="56"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkf-Hj-Nxf">
+                                    <rect key="frame" x="0.0" y="72" width="68" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="iSi-yc-5j4">
+                            <rect key="frame" x="188" y="0.0" width="68" height="92.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yWG-Ny-dvk">
+                                    <rect key="frame" x="0.0" y="0.0" width="68" height="56"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0k-3U-ogr">
+                                    <rect key="frame" x="0.0" y="72" width="68" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="QIW-3Z-aUT"/>
+                </stackView>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dXE-wv-oQP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1637.68115942029" y="338.83928571428572"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Splash-Icons-Design" width="93" height="94"/>
+        <image name="Splash-Icons-Fashion" width="93" height="94"/>
+        <image name="Splash-Icons-Food" width="93" height="94"/>
+        <image name="Splash-Icons-Music" width="93" height="94"/>
+        <image name="Splash-Icons-Sports" width="93" height="94"/>
+        <image name="Splash-Icons-Travel" width="93" height="94"/>
+        <image name="SplashTitle" width="326" height="79"/>
+    </resources>
 </document>
