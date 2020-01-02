@@ -10,7 +10,6 @@
 		156899FA5ED3459D47AAB9D1 /* Pods_RegisterMyTeamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FA6DB88C5183C18EF92738 /* Pods_RegisterMyTeamTests.framework */; };
 		1D0843694128B485B4F99592 /* Pods_RegisterMyTeam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77120218D9A56B7F82B4DA90 /* Pods_RegisterMyTeam.framework */; };
 		C49B7B8A23BE46F300B5593B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49B7B8923BE46F300B5593B /* AppDelegate.swift */; };
-		C49B7B8C23BE46F300B5593B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49B7B8B23BE46F300B5593B /* SceneDelegate.swift */; };
 		C49B7B9123BE46F300B5593B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49B7B8F23BE46F300B5593B /* Main.storyboard */; };
 		C49B7B9323BE46F500B5593B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C49B7B9223BE46F500B5593B /* Assets.xcassets */; };
 		C49B7B9623BE46F500B5593B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49B7B9423BE46F500B5593B /* LaunchScreen.storyboard */; };
@@ -21,6 +20,8 @@
 		C4B15F6223BE778900875028 /* Splash3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B15F6123BE778900875028 /* Splash3ViewController.swift */; };
 		C4B15F6423BE81CA00875028 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B15F6323BE81CA00875028 /* SignInViewController.swift */; };
 		C4B15F6623BE81D700875028 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B15F6523BE81D700875028 /* SignUpViewController.swift */; };
+		C4B15F6823BE934F00875028 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B15F6723BE934F00875028 /* SceneDelegate.swift */; };
+		C4B15F6923BE934F00875028 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B15F6723BE934F00875028 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,6 @@
 		77120218D9A56B7F82B4DA90 /* Pods_RegisterMyTeam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RegisterMyTeam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C49B7B8623BE46F300B5593B /* RegisterMyTeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegisterMyTeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C49B7B8923BE46F300B5593B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C49B7B8B23BE46F300B5593B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C49B7B9023BE46F300B5593B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C49B7B9223BE46F500B5593B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C49B7B9523BE46F500B5593B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +54,7 @@
 		C4B15F6123BE778900875028 /* Splash3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash3ViewController.swift; sourceTree = "<group>"; };
 		C4B15F6323BE81CA00875028 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		C4B15F6523BE81D700875028 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C4B15F6723BE934F00875028 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C6FA6DB88C5183C18EF92738 /* Pods_RegisterMyTeamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RegisterMyTeamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE290E1922951925C79E0267 /* Pods-RegisterMyTeam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegisterMyTeam.release.xcconfig"; path = "Target Support Files/Pods-RegisterMyTeam/Pods-RegisterMyTeam.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				C49B7B8923BE46F300B5593B /* AppDelegate.swift */,
-				C49B7B8B23BE46F300B5593B /* SceneDelegate.swift */,
+				C4B15F6723BE934F00875028 /* SceneDelegate.swift */,
 				C49B7B8F23BE46F300B5593B /* Main.storyboard */,
 				C49B7BAB23BE47AA00B5593B /* AppearanceHelper.swift */,
 				C49B7BAD23BE5C6900B5593B /* ViewControllers */,
@@ -326,10 +327,10 @@
 				C49B7BAC23BE47AA00B5593B /* AppearanceHelper.swift in Sources */,
 				C4B15F6623BE81D700875028 /* SignUpViewController.swift in Sources */,
 				C49B7B8A23BE46F300B5593B /* AppDelegate.swift in Sources */,
-				C49B7B8C23BE46F300B5593B /* SceneDelegate.swift in Sources */,
 				C49B7BB123BE6C3D00B5593B /* Splash2ViewController.swift in Sources */,
 				C49B7BAF23BE5C9000B5593B /* SplashViewController.swift in Sources */,
 				C4B15F6223BE778900875028 /* Splash3ViewController.swift in Sources */,
+				C4B15F6823BE934F00875028 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C49B7BA123BE46F500B5593B /* RegisterMyTeamTests.swift in Sources */,
+				C4B15F6923BE934F00875028 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +495,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K572L95MDD;
 				INFOPLIST_FILE = RegisterMyTeam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -512,6 +515,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K572L95MDD;
 				INFOPLIST_FILE = RegisterMyTeam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -11,7 +11,6 @@ import UIKit
 class SignUpViewController: UIViewController {
     
     
-    
     @IBOutlet weak var alreadyAMemberButton: UIButton!
     @IBOutlet weak var userTypePIckerView: UIPickerView!
     @IBOutlet weak var nameTextField: UITextField!
