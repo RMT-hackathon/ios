@@ -21,6 +21,6 @@ enum AppearanceHelper {
     
     static let white = UIColor(named: "white")
     
-    
+    static let overlayBlue = UIColor(hue: 237/255, saturation: 99/255, brightness: 32/255, alpha: 0.8)
     
 }
