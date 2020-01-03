@@ -139,8 +139,8 @@
 			children = (
 				C49B7B8923BE46F300B5593B /* AppDelegate.swift */,
 				C4B15F6723BE934F00875028 /* SceneDelegate.swift */,
-				C4B15F7123BE9AC800875028 /* Storyboards */,
 				C49B7BAB23BE47AA00B5593B /* AppearanceHelper.swift */,
+				C4B15F7123BE9AC800875028 /* Storyboards */,
 				C49B7BAD23BE5C6900B5593B /* ViewControllers */,
 				C49B7B9223BE46F500B5593B /* Assets.xcassets */,
 				C49B7B9423BE46F500B5593B /* LaunchScreen.storyboard */,

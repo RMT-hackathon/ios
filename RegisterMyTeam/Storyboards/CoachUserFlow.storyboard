@@ -62,22 +62,6 @@
             </objects>
             <point key="canvasLocation" x="379.71014492753625" y="-426.5625"/>
         </scene>
-        <!--Athletes-->
-        <scene sceneID="YQ0-0U-Bfp">
-            <objects>
-                <viewController id="aLc-9v-4e7" customClass="CoachAthletesViewController" customModule="RegisterMyTeam" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="q5S-HB-OCp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6ne-Fh-QgZ"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Athletes" image="person.badge.plus" catalog="system" id="BpJ-2N-gbl"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RY5-jO-had" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-530" y="319"/>
-        </scene>
         <!--Search-->
         <scene sceneID="uiu-X5-iAG">
             <objects>
@@ -376,7 +360,7 @@
                     <connections>
                         <segue destination="ph3-zP-KGQ" kind="relationship" relationship="viewControllers" id="crc-qb-4du"/>
                         <segue destination="pnq-Vf-xl4" kind="relationship" relationship="viewControllers" id="4gj-wf-9XK"/>
-                        <segue destination="aLc-9v-4e7" kind="relationship" relationship="viewControllers" id="M7H-ix-Vd9"/>
+                        <segue destination="XQd-ur-dku" kind="relationship" relationship="viewControllers" id="M7H-ix-Vd9"/>
                         <segue destination="tka-7a-EoA" kind="relationship" relationship="viewControllers" id="o9j-17-anh"/>
                     </connections>
                 </tabBarController>
@@ -507,6 +491,165 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="clv-BD-iBS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2286" y="-427"/>
+        </scene>
+        <!--Athletes-->
+        <scene sceneID="Ziy-wT-x2b">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XQd-ur-dku" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Athletes" image="person.badge.plus" catalog="system" id="BpJ-2N-gbl"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="x47-A2-8mi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rCg-Z8-hMu" kind="relationship" relationship="rootViewController" id="Ihb-zc-g9w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8eT-w3-srF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-530.43478260869574" y="318.75"/>
+        </scene>
+        <!--Coach Athletes View Controller-->
+        <scene sceneID="prM-hi-HHF">
+            <objects>
+                <viewController id="rCg-Z8-hMu" customClass="CoachAthletesViewController" customModule="RegisterMyTeam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MyS-25-TLM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKg-1H-dfJ">
+                                <rect key="frame" x="81" y="87" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Athletes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fra-8j-m5j">
+                                <rect key="frame" x="24" y="120" width="106" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UgU-K9-zGl">
+                                <rect key="frame" x="0.0" y="185" width="414" height="628"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fra-8j-m5j" firstAttribute="leading" secondItem="gHK-Yv-7R8" secondAttribute="leading" constant="24" id="AgU-41-tW8"/>
+                            <constraint firstItem="UgU-K9-zGl" firstAttribute="top" secondItem="fra-8j-m5j" secondAttribute="bottom" constant="32" id="H5b-3L-6gl"/>
+                            <constraint firstItem="fra-8j-m5j" firstAttribute="top" secondItem="gHK-Yv-7R8" secondAttribute="top" constant="32" id="S1u-2w-OnR"/>
+                            <constraint firstItem="UgU-K9-zGl" firstAttribute="leading" secondItem="gHK-Yv-7R8" secondAttribute="leading" id="oJt-gD-eXK"/>
+                            <constraint firstItem="gHK-Yv-7R8" firstAttribute="trailing" secondItem="UgU-K9-zGl" secondAttribute="trailing" id="uov-ZS-uRe"/>
+                            <constraint firstItem="gHK-Yv-7R8" firstAttribute="bottom" secondItem="UgU-K9-zGl" secondAttribute="bottom" id="z5j-ZH-VAT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gHK-Yv-7R8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="W0Q-w9-NhS">
+                        <barButtonItem key="leftBarButtonItem" image="HamburgerIcon" id="Lq5-eF-Wvb">
+                            <connections>
+                                <action selector="hamburgerBarButtonPressed:" destination="rCg-Z8-hMu" id="bmv-yO-U65"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="hamburgerBarButton" destination="Lq5-eF-Wvb" id="TLA-tH-oP9"/>
+                        <segue destination="G2G-1n-THa" kind="presentation" identifier="showSideMenu" id="j4V-sE-GHG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L4z-EG-VoT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="319"/>
+        </scene>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="euL-eh-wTU">
+            <objects>
+                <navigationController modalPresentationStyle="overFullScreen" navigationBarHidden="YES" id="G2G-1n-THa" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PUq-g7-H9K"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yF1-8w-zue">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="kjV-D1-7EB" kind="relationship" relationship="rootViewController" id="ZRR-4o-bTc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ro-m6-GSA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1499" y="319"/>
+        </scene>
+        <!--Side Menu View Controller-->
+        <scene sceneID="sZz-TM-UcD">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="kjV-D1-7EB" customClass="SideMenuViewController" customModule="RegisterMyTeam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8X0-EN-b7a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="ck1-kh-WWm">
+                                <rect key="frame" x="83" y="164" width="248" height="298.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0H-Ko-ppQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="248" height="43"/>
+                                        <state key="normal" title="Inbox">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4c-h4-hNB">
+                                        <rect key="frame" x="0.0" y="64" width="248" height="43"/>
+                                        <state key="normal" title="Important">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPT-M5-Kf5">
+                                        <rect key="frame" x="0.0" y="128" width="248" height="43"/>
+                                        <state key="normal" title="Sent">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRf-jv-eFz">
+                                        <rect key="frame" x="0.0" y="192" width="248" height="42.5"/>
+                                        <state key="normal" title="Draft">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZY-oJ-ded">
+                                        <rect key="frame" x="0.0" y="255.5" width="248" height="43"/>
+                                        <state key="normal" title="Trash">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0039215686269999999" green="0.019607843140000001" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ck1-kh-WWm" firstAttribute="height" secondItem="8X0-EN-b7a" secondAttribute="height" multiplier="1/3" id="03w-Bs-OM4"/>
+                            <constraint firstItem="ck1-kh-WWm" firstAttribute="centerX" secondItem="4eu-3k-VXA" secondAttribute="centerX" id="RRf-Db-kD6"/>
+                            <constraint firstItem="ck1-kh-WWm" firstAttribute="top" secondItem="4eu-3k-VXA" secondAttribute="top" constant="120" id="iek-vD-R1D"/>
+                            <constraint firstItem="ck1-kh-WWm" firstAttribute="width" secondItem="8X0-EN-b7a" secondAttribute="width" multiplier="3/5" id="sGx-rN-jr4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4eu-3k-VXA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fID-FJ-9vX"/>
+                    <connections>
+                        <outlet property="draftButton" destination="hRf-jv-eFz" id="TaJ-PA-NPD"/>
+                        <outlet property="importantButton" destination="E4c-h4-hNB" id="Jzb-Ty-UFn"/>
+                        <outlet property="inboxButton" destination="a0H-Ko-ppQ" id="L4i-kr-zsJ"/>
+                        <outlet property="sentButton" destination="fPT-M5-Kf5" id="pFy-7h-lhs"/>
+                        <outlet property="trashButton" destination="HZY-oJ-ded" id="Wkt-G9-ml8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bJv-OX-SXh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2286" y="319"/>
         </scene>
     </scenes>
     <resources>
