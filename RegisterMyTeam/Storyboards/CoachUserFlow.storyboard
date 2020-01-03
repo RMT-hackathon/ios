@@ -55,7 +55,7 @@
                     <connections>
                         <outlet property="hamburgerBarButton" destination="ALx-pC-NgR" id="bPE-tr-xmk"/>
                         <segue destination="pG3-tZ-3ds" kind="presentation" identifier="showSideMenu" id="rfp-k9-ZqE"/>
-                        <segue destination="2iK-Ut-lGa" kind="show" id="gei-7W-v7m"/>
+                        <segue destination="2iK-Ut-lGa" kind="show" identifier="AddTeamSegue" id="gei-7W-v7m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M3U-61-JCV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -517,6 +517,6 @@
         <image name="person.badge.plus" catalog="system" width="64" height="58"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lEg-zy-6zg"/>
+        <segue reference="gei-7W-v7m"/>
     </inferredMetricsTieBreakers>
 </document>

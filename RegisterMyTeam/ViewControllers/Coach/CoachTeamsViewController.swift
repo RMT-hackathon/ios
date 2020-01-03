@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SideMenu
+import Floaty
 
 class CoachTeamsViewController: UIViewController {
 
@@ -17,22 +19,43 @@ class CoachTeamsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setupFloaty()
     }
+    
+    
+    
+    func setupFloaty() {
+        let teamIcon = UIImage(named: "TabIcon-Group")
+        let floaty = Floaty()
+        floaty.itemButtonColor = AppearanceHelper.brandBlue
+        
+        floaty.addItem("Add Team", icon: teamIcon) { (item) in
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "AddTeamSegue", sender: self)
+            }
+        }
+        floaty.paddingY = 42
+        floaty.buttonColor = AppearanceHelper.brandBlue
+        floaty.plusColor = AppearanceHelper.gray
+        self.view.addSubview(floaty)
+    }
+    
+    
     
 
     @IBAction func hamburgerButtonPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "showSideMenu", sender: self)
     }
     
     
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "showSideMenu" {
+            guard let destinationNavC = segue.destination as? SideMenuNavigationController,
+                let destinationVC = destinationNavC.topViewController as? SideMenuViewController else { return }
+    
+            destinationNavC.statusBarEndAlpha = 0
+            }
     }
-    */
 
 }
