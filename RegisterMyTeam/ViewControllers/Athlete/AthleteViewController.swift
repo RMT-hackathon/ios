@@ -24,9 +24,13 @@ class AthleteViewController: UIViewController {
     
     // MARK: - Side (Hamburger) Menu
     func stylize() {
+        let titleImage = UIImage(named: "TitleArt")
+        let titleImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        titleImageView.contentMode = .scaleAspectFill
+        titleImageView.image = titleImage
+        navigationItem.titleView = titleImageView
         
         navigationController?.navigationBar.barTintColor = AppearanceHelper.brandBlue
-        
         navigationController?.navigationBar.isTranslucent = false
         
         hamburgerBarButton.tintColor = AppearanceHelper.gray

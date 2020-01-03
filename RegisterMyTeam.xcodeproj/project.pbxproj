@@ -29,6 +29,8 @@
 		C4B15F7B23BEAA7500875028 /* AthleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B15F7A23BEAA7500875028 /* AthleteViewController.swift */; };
 		C4B15F7D23BEBE6500875028 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B15F7C23BEBE6500875028 /* SideMenuViewController.swift */; };
 		C4B15F7F23BEEB2700875028 /* AthleteTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B15F7E23BEEB2700875028 /* AthleteTeamsViewController.swift */; };
+		C4B15F8223BEF0CE00875028 /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B15F8123BEF0CE00875028 /* ParentViewController.swift */; };
+		C4B15F8423BEF0DC00875028 /* ParentTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B15F8323BEF0DC00875028 /* ParentTeamsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		C4B15F7A23BEAA7500875028 /* AthleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteViewController.swift; sourceTree = "<group>"; };
 		C4B15F7C23BEBE6500875028 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		C4B15F7E23BEEB2700875028 /* AthleteTeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteTeamsViewController.swift; sourceTree = "<group>"; };
+		C4B15F8123BEF0CE00875028 /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		C4B15F8323BEF0DC00875028 /* ParentTeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentTeamsViewController.swift; sourceTree = "<group>"; };
 		C6FA6DB88C5183C18EF92738 /* Pods_RegisterMyTeamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RegisterMyTeamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE290E1922951925C79E0267 /* Pods-RegisterMyTeam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegisterMyTeam.release.xcconfig"; path = "Target Support Files/Pods-RegisterMyTeam/Pods-RegisterMyTeam.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				C4B15F7723BEAA0D00875028 /* OnBoarding */,
+				C4B15F8023BEF0AB00875028 /* Parent */,
 				C4B15F7623BEA9FD00875028 /* Athlete */,
 				C4B15F7C23BEBE6500875028 /* SideMenuViewController.swift */,
 			);
@@ -203,6 +208,15 @@
 				C4B15F6523BE81D700875028 /* SignUpViewController.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		C4B15F8023BEF0AB00875028 /* Parent */ = {
+			isa = PBXGroup;
+			children = (
+				C4B15F8123BEF0CE00875028 /* ParentViewController.swift */,
+				C4B15F8323BEF0DC00875028 /* ParentTeamsViewController.swift */,
+			);
+			path = Parent;
 			sourceTree = "<group>";
 		};
 		E16CDA6BDF374E81A102F57A /* Pods */ = {
@@ -390,10 +404,12 @@
 			files = (
 				C4B15F6423BE81CA00875028 /* SignInViewController.swift in Sources */,
 				C49B7BAC23BE47AA00B5593B /* AppearanceHelper.swift in Sources */,
+				C4B15F8223BEF0CE00875028 /* ParentViewController.swift in Sources */,
 				C4B15F6623BE81D700875028 /* SignUpViewController.swift in Sources */,
 				C4B15F7B23BEAA7500875028 /* AthleteViewController.swift in Sources */,
 				C49B7B8A23BE46F300B5593B /* AppDelegate.swift in Sources */,
 				C4B15F7F23BEEB2700875028 /* AthleteTeamsViewController.swift in Sources */,
+				C4B15F8423BEF0DC00875028 /* ParentTeamsViewController.swift in Sources */,
 				C49B7BB123BE6C3D00B5593B /* Splash2ViewController.swift in Sources */,
 				C49B7BAF23BE5C9000B5593B /* SplashViewController.swift in Sources */,
 				C4B15F6223BE778900875028 /* Splash3ViewController.swift in Sources */,

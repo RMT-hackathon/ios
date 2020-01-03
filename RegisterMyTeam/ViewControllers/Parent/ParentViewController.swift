@@ -1,5 +1,5 @@
 //
-//  AthleteTeamsViewController.swift
+//  ParentViewController.swift
 //  RegisterMyTeam
 //
 //  Created by Kobe McKee on 1/2/20.
@@ -9,7 +9,7 @@
 import UIKit
 import SideMenu
 
-class AthleteTeamsViewController: UIViewController {
+class ParentViewController: UIViewController {
 
     @IBOutlet weak var hamburgerBarButton: UIBarButtonItem!
     
@@ -21,6 +21,7 @@ class AthleteTeamsViewController: UIViewController {
     
     
     func stylize() {
+        
         let titleImage = UIImage(named: "TitleArt")
         let titleImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         titleImageView.contentMode = .scaleAspectFill
@@ -29,7 +30,6 @@ class AthleteTeamsViewController: UIViewController {
         
         navigationController?.navigationBar.barTintColor = AppearanceHelper.brandBlue
         navigationController?.navigationBar.isTranslucent = false
-        
         hamburgerBarButton.tintColor = AppearanceHelper.gray
     }
     
@@ -39,16 +39,16 @@ class AthleteTeamsViewController: UIViewController {
     }
     
     
-
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "showSideMenu" {
-                guard let destinationNavC = segue.destination as? SideMenuNavigationController,
-                    let destinationVC = destinationNavC.topViewController as? SideMenuViewController else { return }
-        
-                destinationNavC.statusBarEndAlpha = 0
-                }
-    }
     
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showSideMenu" {
+            guard let destinationNavC = segue.destination as? SideMenuNavigationController,
+                let destinationVC = destinationNavC.topViewController as? SideMenuViewController else { return }
+    
+            destinationNavC.statusBarEndAlpha = 0
+            }
+    }
 
 }

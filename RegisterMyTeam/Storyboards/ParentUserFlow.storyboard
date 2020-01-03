@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Athlete Teams View Controller-->
+        <!--Parent Teams View Controller-->
         <scene sceneID="wUH-6g-jV2">
             <objects>
-                <viewController id="Zt9-Zv-3kc" customClass="AthleteTeamsViewController" customModule="RegisterMyTeam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Zt9-Zv-3kc" customClass="ParentTeamsViewController" customModule="RegisterMyTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ud5-vb-HHu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,12 +48,12 @@
                     <navigationItem key="navigationItem" id="V8X-dW-Mhs">
                         <barButtonItem key="leftBarButtonItem" image="HamburgerIcon" id="5Hz-GA-LKd">
                             <connections>
-                                <action selector="hamburgerBarButtonPressed:" destination="Zt9-Zv-3kc" id="82U-u5-z7l"/>
+                                <action selector="hamburgerBarButtonPressed:" destination="Zt9-Zv-3kc" id="JCg-bj-wVa"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="hamburgerBarButton" destination="5Hz-GA-LKd" id="pqe-Aa-iax"/>
+                        <outlet property="hamburgerBarButton" destination="5Hz-GA-LKd" id="OZP-Wm-TBt"/>
                         <segue destination="xVs-va-O8I" kind="presentation" identifier="showSideMenu" id="aLQ-Uq-wpE"/>
                     </connections>
                 </viewController>
@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="-530" y="1006"/>
         </scene>
-        <!--Athlete View Controller-->
+        <!--Parent View Controller-->
         <scene sceneID="dg5-4O-KDQ">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="vc8-jl-IZi" customClass="AthleteViewController" customModule="RegisterMyTeam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="vc8-jl-IZi" customClass="ParentViewController" customModule="RegisterMyTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gAA-0k-POo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -198,12 +198,12 @@
                     <navigationItem key="navigationItem" id="HyI-a1-3xV">
                         <barButtonItem key="leftBarButtonItem" image="HamburgerIcon" id="eSD-cM-0da">
                             <connections>
-                                <action selector="hamburgerBarButtonPressed:" destination="vc8-jl-IZi" id="URN-8K-LpL"/>
+                                <action selector="hamburgerBarButtonPressed:" destination="vc8-jl-IZi" id="SCD-pK-rHs"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="hamburgerBarButton" destination="eSD-cM-0da" id="Ae0-uE-vD1"/>
+                        <outlet property="hamburgerBarButton" destination="eSD-cM-0da" id="wYo-qL-Rad"/>
                         <segue destination="DiU-I5-CuA" kind="presentation" identifier="showSideMenu" id="3IK-ep-KXl"/>
                     </connections>
                 </viewController>
