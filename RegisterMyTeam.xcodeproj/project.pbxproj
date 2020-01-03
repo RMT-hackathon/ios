@@ -253,8 +253,8 @@
 			children = (
 				C4E6162223BF0E2F0034D11F /* AdminAddCoachViewController.swift */,
 				C4E6161C23BF0DF30034D11F /* AdminViewController.swift */,
-				C4E6162023BF0E210034D11F /* AdminAthletesViewController.swift */,
 				C4E6161E23BF0E010034D11F /* AdminTeamsViewController.swift */,
+				C4E6162023BF0E210034D11F /* AdminAthletesViewController.swift */,
 			);
 			path = Admin;
 			sourceTree = "<group>";

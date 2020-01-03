@@ -23,14 +23,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teams" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iec-LQ-Xu4">
-                                <rect key="frame" x="24" y="120" width="82" height="32.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coaches/Teams" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iec-LQ-Xu4">
+                                <rect key="frame" x="24" y="120" width="205" height="33"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fdq-wt-2t3">
-                                <rect key="frame" x="0.0" y="184.5" width="414" height="628.5"/>
+                                <rect key="frame" x="0.0" y="185" width="414" height="628"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -48,14 +48,14 @@
                     <navigationItem key="navigationItem" id="SVR-oe-yYA">
                         <barButtonItem key="leftBarButtonItem" image="HamburgerIcon" id="9kl-77-vuj">
                             <connections>
-                                <action selector="hamburgerButtonPressed:" destination="iat-sX-sa1" id="lhq-r6-WGQ"/>
+                                <action selector="hamburgerBarButtonPressed:" destination="iat-sX-sa1" id="hkB-J1-4r9"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="hamburgerBarButton" destination="9kl-77-vuj" id="l3K-hd-25M"/>
+                        <outlet property="hamburgerBarButton" destination="9kl-77-vuj" id="w0C-yH-LTh"/>
                         <segue destination="QiE-OG-pAC" kind="presentation" identifier="showSideMenu" id="bGl-Ik-1gh"/>
-                        <segue destination="cBA-IF-DRB" kind="show" identifier="AddTeamSegue" id="Vy5-eu-9bU"/>
+                        <segue destination="cBA-IF-DRB" kind="show" identifier="AddCoachSegue" id="Vy5-eu-9bU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5x6-aw-mFd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -183,14 +183,14 @@
                     <navigationItem key="navigationItem" id="Ib3-0m-YjQ">
                         <barButtonItem key="leftBarButtonItem" image="HamburgerIcon" id="Cov-6S-Zi1">
                             <connections>
-                                <action selector="hamburgerButtonPressed:" destination="NEN-2j-oTH" id="RjR-u6-gVa"/>
+                                <action selector="hamburgerBarButtonPressed:" destination="NEN-2j-oTH" id="jRN-Sz-4Hm"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="hamburgerBarButton" destination="Cov-6S-Zi1" id="osU-eW-7Ch"/>
+                        <outlet property="hamburgerBarButton" destination="Cov-6S-Zi1" id="A2v-MJ-o8M"/>
                         <segue destination="Zmx-IO-1ze" kind="presentation" identifier="showSideMenu" id="MU2-VO-n92"/>
-                        <segue destination="cBA-IF-DRB" kind="show" identifier="AddTeamSegue" id="R1L-JN-zcQ"/>
+                        <segue destination="cBA-IF-DRB" kind="show" identifier="AddCoachSegue" id="R1L-JN-zcQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xH8-o6-ZcL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -551,12 +551,12 @@
                     <navigationItem key="navigationItem" id="EAo-LR-Ahs">
                         <barButtonItem key="leftBarButtonItem" image="HamburgerIcon" id="5Pa-GC-Its">
                             <connections>
-                                <action selector="hamburgerBarButtonPressed:" destination="YJR-ru-Wg2" id="y3S-Lt-y8c"/>
+                                <action selector="hamburgerBarButtonPressed:" destination="YJR-ru-Wg2" id="YoR-1c-XqC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="hamburgerBarButton" destination="5Pa-GC-Its" id="fnm-L6-lr5"/>
+                        <outlet property="hamburgerBarButton" destination="5Pa-GC-Its" id="Mp5-mL-MvT"/>
                         <segue destination="h5W-kD-zC0" kind="presentation" identifier="showSideMenu" id="1cc-31-6IS"/>
                     </connections>
                 </viewController>
@@ -660,6 +660,6 @@
         <image name="person.badge.plus" catalog="system" width="64" height="58"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Vy5-eu-9bU"/>
+        <segue reference="R1L-JN-zcQ"/>
     </inferredMetricsTieBreakers>
 </document>
