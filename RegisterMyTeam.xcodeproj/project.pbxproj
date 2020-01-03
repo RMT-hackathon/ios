@@ -154,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				C4B15F7723BEAA0D00875028 /* OnBoarding */,
+				C4E6161023BEFD350034D11F /* Coach */,
 				C4B15F8023BEF0AB00875028 /* Parent */,
 				C4B15F7623BEA9FD00875028 /* Athlete */,
 				C4B15F7C23BEBE6500875028 /* SideMenuViewController.swift */,
@@ -217,6 +218,13 @@
 				C4B15F8323BEF0DC00875028 /* ParentTeamsViewController.swift */,
 			);
 			path = Parent;
+			sourceTree = "<group>";
+		};
+		C4E6161023BEFD350034D11F /* Coach */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coach;
 			sourceTree = "<group>";
 		};
 		E16CDA6BDF374E81A102F57A /* Pods */ = {
