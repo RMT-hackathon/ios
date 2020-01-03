@@ -31,6 +31,9 @@
 		C4B15F7F23BEEB2700875028 /* AthleteTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B15F7E23BEEB2700875028 /* AthleteTeamsViewController.swift */; };
 		C4B15F8223BEF0CE00875028 /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B15F8123BEF0CE00875028 /* ParentViewController.swift */; };
 		C4B15F8423BEF0DC00875028 /* ParentTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B15F8323BEF0DC00875028 /* ParentTeamsViewController.swift */; };
+		C4E6161223BEFD720034D11F /* CoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E6161123BEFD720034D11F /* CoachViewController.swift */; };
+		C4E6161423BEFD7F0034D11F /* CoachTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E6161323BEFD7F0034D11F /* CoachTeamsViewController.swift */; };
+		C4E6161623BEFD920034D11F /* CoachAthletesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E6161523BEFD920034D11F /* CoachAthletesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,9 @@
 		C4B15F7E23BEEB2700875028 /* AthleteTeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteTeamsViewController.swift; sourceTree = "<group>"; };
 		C4B15F8123BEF0CE00875028 /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 		C4B15F8323BEF0DC00875028 /* ParentTeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentTeamsViewController.swift; sourceTree = "<group>"; };
+		C4E6161123BEFD720034D11F /* CoachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachViewController.swift; sourceTree = "<group>"; };
+		C4E6161323BEFD7F0034D11F /* CoachTeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachTeamsViewController.swift; sourceTree = "<group>"; };
+		C4E6161523BEFD920034D11F /* CoachAthletesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachAthletesViewController.swift; sourceTree = "<group>"; };
 		C6FA6DB88C5183C18EF92738 /* Pods_RegisterMyTeamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RegisterMyTeamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE290E1922951925C79E0267 /* Pods-RegisterMyTeam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegisterMyTeam.release.xcconfig"; path = "Target Support Files/Pods-RegisterMyTeam/Pods-RegisterMyTeam.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -223,6 +229,9 @@
 		C4E6161023BEFD350034D11F /* Coach */ = {
 			isa = PBXGroup;
 			children = (
+				C4E6161123BEFD720034D11F /* CoachViewController.swift */,
+				C4E6161323BEFD7F0034D11F /* CoachTeamsViewController.swift */,
+				C4E6161523BEFD920034D11F /* CoachAthletesViewController.swift */,
 			);
 			path = Coach;
 			sourceTree = "<group>";
@@ -413,10 +422,13 @@
 				C4B15F6423BE81CA00875028 /* SignInViewController.swift in Sources */,
 				C49B7BAC23BE47AA00B5593B /* AppearanceHelper.swift in Sources */,
 				C4B15F8223BEF0CE00875028 /* ParentViewController.swift in Sources */,
+				C4E6161423BEFD7F0034D11F /* CoachTeamsViewController.swift in Sources */,
 				C4B15F6623BE81D700875028 /* SignUpViewController.swift in Sources */,
 				C4B15F7B23BEAA7500875028 /* AthleteViewController.swift in Sources */,
 				C49B7B8A23BE46F300B5593B /* AppDelegate.swift in Sources */,
 				C4B15F7F23BEEB2700875028 /* AthleteTeamsViewController.swift in Sources */,
+				C4E6161223BEFD720034D11F /* CoachViewController.swift in Sources */,
+				C4E6161623BEFD920034D11F /* CoachAthletesViewController.swift in Sources */,
 				C4B15F8423BEF0DC00875028 /* ParentTeamsViewController.swift in Sources */,
 				C49B7BB123BE6C3D00B5593B /* Splash2ViewController.swift in Sources */,
 				C49B7BAF23BE5C9000B5593B /* SplashViewController.swift in Sources */,
