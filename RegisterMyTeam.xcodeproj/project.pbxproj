@@ -35,6 +35,10 @@
 		C4E6161423BEFD7F0034D11F /* CoachTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E6161323BEFD7F0034D11F /* CoachTeamsViewController.swift */; };
 		C4E6161623BEFD920034D11F /* CoachAthletesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E6161523BEFD920034D11F /* CoachAthletesViewController.swift */; };
 		C4E6161823BF04CA0034D11F /* CoachAddTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E6161723BF04CA0034D11F /* CoachAddTeamViewController.swift */; };
+		C4E6161D23BF0DF30034D11F /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E6161C23BF0DF30034D11F /* AdminViewController.swift */; };
+		C4E6161F23BF0E010034D11F /* AdminTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E6161E23BF0E010034D11F /* AdminTeamsViewController.swift */; };
+		C4E6162123BF0E210034D11F /* AdminAthletesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E6162023BF0E210034D11F /* AdminAthletesViewController.swift */; };
+		C4E6162323BF0E2F0034D11F /* AdminAddCoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E6162223BF0E2F0034D11F /* AdminAddCoachViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,10 @@
 		C4E6161323BEFD7F0034D11F /* CoachTeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachTeamsViewController.swift; sourceTree = "<group>"; };
 		C4E6161523BEFD920034D11F /* CoachAthletesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachAthletesViewController.swift; sourceTree = "<group>"; };
 		C4E6161723BF04CA0034D11F /* CoachAddTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachAddTeamViewController.swift; sourceTree = "<group>"; };
+		C4E6161C23BF0DF30034D11F /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		C4E6161E23BF0E010034D11F /* AdminTeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTeamsViewController.swift; sourceTree = "<group>"; };
+		C4E6162023BF0E210034D11F /* AdminAthletesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminAthletesViewController.swift; sourceTree = "<group>"; };
+		C4E6162223BF0E2F0034D11F /* AdminAddCoachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminAddCoachViewController.swift; sourceTree = "<group>"; };
 		C6FA6DB88C5183C18EF92738 /* Pods_RegisterMyTeamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RegisterMyTeamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE290E1922951925C79E0267 /* Pods-RegisterMyTeam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegisterMyTeam.release.xcconfig"; path = "Target Support Files/Pods-RegisterMyTeam/Pods-RegisterMyTeam.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,9 +170,10 @@
 			isa = PBXGroup;
 			children = (
 				C4B15F7723BEAA0D00875028 /* OnBoarding */,
-				C4E6161023BEFD350034D11F /* Coach */,
-				C4B15F8023BEF0AB00875028 /* Parent */,
 				C4B15F7623BEA9FD00875028 /* Athlete */,
+				C4B15F8023BEF0AB00875028 /* Parent */,
+				C4E6161023BEFD350034D11F /* Coach */,
+				C4E6161B23BF0DC80034D11F /* Admin */,
 				C4B15F7C23BEBE6500875028 /* SideMenuViewController.swift */,
 			);
 			path = ViewControllers;
@@ -176,8 +185,8 @@
 				C49B7B8F23BE46F300B5593B /* Main.storyboard */,
 				C4B15F6F23BE9A2500875028 /* AthleteUserFlow.storyboard */,
 				C4B15F6D23BE99CE00875028 /* ParentUserFlow.storyboard */,
-				C4B15F7223BE9AE700875028 /* AdminUserFlow.storyboard */,
 				C4B15F7423BE9AF700875028 /* CoachUserFlow.storyboard */,
+				C4B15F7223BE9AE700875028 /* AdminUserFlow.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -231,12 +240,23 @@
 		C4E6161023BEFD350034D11F /* Coach */ = {
 			isa = PBXGroup;
 			children = (
+				C4E6161723BF04CA0034D11F /* CoachAddTeamViewController.swift */,
 				C4E6161123BEFD720034D11F /* CoachViewController.swift */,
 				C4E6161323BEFD7F0034D11F /* CoachTeamsViewController.swift */,
-				C4E6161723BF04CA0034D11F /* CoachAddTeamViewController.swift */,
 				C4E6161523BEFD920034D11F /* CoachAthletesViewController.swift */,
 			);
 			path = Coach;
+			sourceTree = "<group>";
+		};
+		C4E6161B23BF0DC80034D11F /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				C4E6162223BF0E2F0034D11F /* AdminAddCoachViewController.swift */,
+				C4E6161C23BF0DF30034D11F /* AdminViewController.swift */,
+				C4E6162023BF0E210034D11F /* AdminAthletesViewController.swift */,
+				C4E6161E23BF0E010034D11F /* AdminTeamsViewController.swift */,
+			);
+			path = Admin;
 			sourceTree = "<group>";
 		};
 		E16CDA6BDF374E81A102F57A /* Pods */ = {
@@ -422,18 +442,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4E6161D23BF0DF30034D11F /* AdminViewController.swift in Sources */,
 				C4E6161823BF04CA0034D11F /* CoachAddTeamViewController.swift in Sources */,
 				C4B15F6423BE81CA00875028 /* SignInViewController.swift in Sources */,
 				C49B7BAC23BE47AA00B5593B /* AppearanceHelper.swift in Sources */,
+				C4E6162323BF0E2F0034D11F /* AdminAddCoachViewController.swift in Sources */,
 				C4B15F8223BEF0CE00875028 /* ParentViewController.swift in Sources */,
 				C4E6161423BEFD7F0034D11F /* CoachTeamsViewController.swift in Sources */,
 				C4B15F6623BE81D700875028 /* SignUpViewController.swift in Sources */,
 				C4B15F7B23BEAA7500875028 /* AthleteViewController.swift in Sources */,
 				C49B7B8A23BE46F300B5593B /* AppDelegate.swift in Sources */,
 				C4B15F7F23BEEB2700875028 /* AthleteTeamsViewController.swift in Sources */,
+				C4E6161F23BF0E010034D11F /* AdminTeamsViewController.swift in Sources */,
 				C4E6161223BEFD720034D11F /* CoachViewController.swift in Sources */,
 				C4E6161623BEFD920034D11F /* CoachAthletesViewController.swift in Sources */,
 				C4B15F8423BEF0DC00875028 /* ParentTeamsViewController.swift in Sources */,
+				C4E6162123BF0E210034D11F /* AdminAthletesViewController.swift in Sources */,
 				C49B7BB123BE6C3D00B5593B /* Splash2ViewController.swift in Sources */,
 				C49B7BAF23BE5C9000B5593B /* SplashViewController.swift in Sources */,
 				C4B15F6223BE778900875028 /* Splash3ViewController.swift in Sources */,

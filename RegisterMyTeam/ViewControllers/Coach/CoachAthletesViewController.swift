@@ -11,9 +11,8 @@ import SideMenu
 
 class CoachAthletesViewController: UIViewController {
 
-    
-    
     @IBOutlet weak var hamburgerBarButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
