@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Parent Teams View Controller-->
+        <!--Coach Teams View Controller-->
         <scene sceneID="EhX-n8-xH5">
             <objects>
-                <viewController id="rGz-Yu-Q3Q" customClass="ParentTeamsViewController" customModule="RegisterMyTeam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rGz-Yu-Q3Q" customClass="CoachTeamsViewController" customModule="RegisterMyTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I4q-gT-FKv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,13 +48,14 @@
                     <navigationItem key="navigationItem" id="jpH-dO-whF">
                         <barButtonItem key="leftBarButtonItem" image="HamburgerIcon" id="ALx-pC-NgR">
                             <connections>
-                                <action selector="hamburgerBarButtonPressed:" destination="rGz-Yu-Q3Q" id="7xq-CP-4FT"/>
+                                <action selector="hamburgerButtonPressed:" destination="rGz-Yu-Q3Q" id="7Ue-Kp-709"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="hamburgerBarButton" destination="ALx-pC-NgR" id="63S-8n-ToU"/>
+                        <outlet property="hamburgerBarButton" destination="ALx-pC-NgR" id="bPE-tr-xmk"/>
                         <segue destination="pG3-tZ-3ds" kind="presentation" identifier="showSideMenu" id="rfp-k9-ZqE"/>
+                        <segue destination="2iK-Ut-lGa" kind="show" id="gei-7W-v7m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M3U-61-JCV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -64,7 +65,7 @@
         <!--Athletes-->
         <scene sceneID="YQ0-0U-Bfp">
             <objects>
-                <viewController id="aLc-9v-4e7" sceneMemberID="viewController">
+                <viewController id="aLc-9v-4e7" customClass="CoachAthletesViewController" customModule="RegisterMyTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q5S-HB-OCp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="-530" y="1006"/>
         </scene>
-        <!--Parent View Controller-->
+        <!--Coach View Controller-->
         <scene sceneID="9tF-x9-k7N">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="CeP-zG-1m6" customClass="ParentViewController" customModule="RegisterMyTeam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="CeP-zG-1m6" customClass="CoachViewController" customModule="RegisterMyTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cmz-O7-FLo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -198,18 +199,84 @@
                     <navigationItem key="navigationItem" id="e5G-y6-AlH">
                         <barButtonItem key="leftBarButtonItem" image="HamburgerIcon" id="VHe-oa-9Ha">
                             <connections>
-                                <action selector="hamburgerBarButtonPressed:" destination="CeP-zG-1m6" id="rU1-hX-alb"/>
+                                <action selector="hamburgerButtonPressed:" destination="CeP-zG-1m6" id="j82-nh-K7e"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="hamburgerBarButton" destination="VHe-oa-9Ha" id="3EH-eV-k3a"/>
+                        <outlet property="hamburgerBarButton" destination="VHe-oa-9Ha" id="erH-eu-pzY"/>
                         <segue destination="eNj-2W-hx8" kind="presentation" identifier="showSideMenu" id="AwJ-M2-XCz"/>
+                        <segue destination="2iK-Ut-lGa" kind="show" identifier="AddTeamSegue" id="lEg-zy-6zg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Opt-aL-WxA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="379.71014492753625" y="-1125"/>
+        </scene>
+        <!--Coach Add Team View Controller-->
+        <scene sceneID="jr6-uA-3Ql">
+            <objects>
+                <viewController id="2iK-Ut-lGa" customClass="CoachAddTeamViewController" customModule="RegisterMyTeam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EWT-rC-gPp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create A Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCX-GM-b4p">
+                                <rect key="frame" x="127.5" y="185.5" width="159" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lSq-sN-SY8">
+                                <rect key="frame" x="18" y="339.5" width="378" height="122"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ksv-5c-OIy">
+                                        <rect key="frame" x="0.0" y="0.0" width="378" height="53"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cut List 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J5T-nR-OL0">
+                                        <rect key="frame" x="0.0" y="69" width="378" height="53"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="J5T-nR-OL0" secondAttribute="height" multiplier="10:1.4" id="KZI-eS-O5A"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="J5T-nR-OL0" firstAttribute="width" secondItem="Ksv-5c-OIy" secondAttribute="width" id="Sgl-gH-puE"/>
+                                    <constraint firstItem="J5T-nR-OL0" firstAttribute="height" secondItem="Ksv-5c-OIy" secondAttribute="height" id="gL3-fa-GfQ"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMF-vR-8rA">
+                                <rect key="frame" x="18" y="608" width="378" height="53"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.019607843140000001" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Save Team">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lSq-sN-SY8" firstAttribute="centerY" secondItem="7OL-xC-wjm" secondAttribute="centerY" constant="-50" id="07z-qC-dlQ"/>
+                            <constraint firstItem="kCX-GM-b4p" firstAttribute="centerX" secondItem="7OL-xC-wjm" secondAttribute="centerX" id="0Pt-Hm-VsG"/>
+                            <constraint firstItem="JMF-vR-8rA" firstAttribute="top" secondItem="lSq-sN-SY8" secondAttribute="bottom" constant="146.5" id="8cr-VW-IWb"/>
+                            <constraint firstItem="JMF-vR-8rA" firstAttribute="centerX" secondItem="7OL-xC-wjm" secondAttribute="centerX" id="GHd-g4-eBc"/>
+                            <constraint firstItem="lSq-sN-SY8" firstAttribute="top" secondItem="kCX-GM-b4p" secondAttribute="bottom" constant="125" id="Kgm-To-xCG"/>
+                            <constraint firstItem="JMF-vR-8rA" firstAttribute="width" secondItem="J5T-nR-OL0" secondAttribute="width" id="N2L-hB-7e2"/>
+                            <constraint firstItem="lSq-sN-SY8" firstAttribute="leading" secondItem="7OL-xC-wjm" secondAttribute="leading" constant="18" id="b9Y-mk-xaz"/>
+                            <constraint firstItem="lSq-sN-SY8" firstAttribute="centerX" secondItem="7OL-xC-wjm" secondAttribute="centerX" id="vfV-rU-hMg"/>
+                            <constraint firstItem="7OL-xC-wjm" firstAttribute="trailing" secondItem="lSq-sN-SY8" secondAttribute="trailing" constant="18" id="yYl-na-Ly2"/>
+                            <constraint firstItem="JMF-vR-8rA" firstAttribute="height" secondItem="J5T-nR-OL0" secondAttribute="height" id="yu5-Fu-1Tc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7OL-xC-wjm"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1LW-S3-LWf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gWa-me-5A4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1733" y="-1160"/>
         </scene>
         <!--Side Menu Navigation Controller-->
         <scene sceneID="mAy-Ar-0uJ">
@@ -229,7 +296,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WSf-4i-QvS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1284" y="-1125"/>
+            <point key="canvasLocation" x="1161" y="-1904"/>
         </scene>
         <!--Side Menu View Controller-->
         <scene sceneID="bqt-Bp-w4c">
@@ -295,7 +362,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AH5-qr-LFm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2286" y="-1125"/>
+            <point key="canvasLocation" x="2125" y="-1904"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bBG-7p-fFQ">
@@ -373,7 +440,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="86J-1E-A91" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1283" y="-427"/>
+            <point key="canvasLocation" x="1499" y="-427"/>
         </scene>
         <!--Side Menu View Controller-->
         <scene sceneID="JgB-r0-q8C">
@@ -437,34 +504,6 @@
                         <outlet property="trashButton" destination="taP-IF-Hzr" id="80W-OC-YUS"/>
                     </connections>
                 </viewController>
-                <stackView opaque="NO" contentMode="scaleToFill" spacing="24" id="X5h-yG-ITe">
-                    <rect key="frame" x="0.0" y="0.0" width="146" height="59"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oc8-ce-hoc">
-                            <rect key="frame" x="0.0" y="0.0" width="76" height="59"/>
-                        </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAl-cq-7nD">
-                            <rect key="frame" x="100" y="0.0" width="46" height="59"/>
-                            <state key="normal" title="Button"/>
-                        </button>
-                    </subviews>
-                    <viewLayoutGuide key="safeArea" id="8y1-Us-II7"/>
-                </stackView>
-                <stackView opaque="NO" contentMode="scaleToFill" spacing="24" id="ajb-7s-fDR">
-                    <rect key="frame" x="0.0" y="0.0" width="146" height="59"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GdP-iM-SCI">
-                            <rect key="frame" x="0.0" y="0.0" width="76" height="59"/>
-                        </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07u-jP-GMX">
-                            <rect key="frame" x="100" y="0.0" width="46" height="59"/>
-                            <state key="normal" title="Button"/>
-                        </button>
-                    </subviews>
-                    <viewLayoutGuide key="safeArea" id="E0V-ez-27S"/>
-                </stackView>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="clv-BD-iBS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2286" y="-427"/>
@@ -477,4 +516,7 @@
         <image name="TabIcon-User" width="20" height="20"/>
         <image name="person.badge.plus" catalog="system" width="64" height="58"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="lEg-zy-6zg"/>
+    </inferredMetricsTieBreakers>
 </document>

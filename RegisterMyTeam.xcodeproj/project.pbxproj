@@ -34,6 +34,7 @@
 		C4E6161223BEFD720034D11F /* CoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E6161123BEFD720034D11F /* CoachViewController.swift */; };
 		C4E6161423BEFD7F0034D11F /* CoachTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E6161323BEFD7F0034D11F /* CoachTeamsViewController.swift */; };
 		C4E6161623BEFD920034D11F /* CoachAthletesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E6161523BEFD920034D11F /* CoachAthletesViewController.swift */; };
+		C4E6161823BF04CA0034D11F /* CoachAddTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E6161723BF04CA0034D11F /* CoachAddTeamViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		C4E6161123BEFD720034D11F /* CoachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachViewController.swift; sourceTree = "<group>"; };
 		C4E6161323BEFD7F0034D11F /* CoachTeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachTeamsViewController.swift; sourceTree = "<group>"; };
 		C4E6161523BEFD920034D11F /* CoachAthletesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachAthletesViewController.swift; sourceTree = "<group>"; };
+		C4E6161723BF04CA0034D11F /* CoachAddTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachAddTeamViewController.swift; sourceTree = "<group>"; };
 		C6FA6DB88C5183C18EF92738 /* Pods_RegisterMyTeamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RegisterMyTeamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE290E1922951925C79E0267 /* Pods-RegisterMyTeam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegisterMyTeam.release.xcconfig"; path = "Target Support Files/Pods-RegisterMyTeam/Pods-RegisterMyTeam.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -231,6 +233,7 @@
 			children = (
 				C4E6161123BEFD720034D11F /* CoachViewController.swift */,
 				C4E6161323BEFD7F0034D11F /* CoachTeamsViewController.swift */,
+				C4E6161723BF04CA0034D11F /* CoachAddTeamViewController.swift */,
 				C4E6161523BEFD920034D11F /* CoachAthletesViewController.swift */,
 			);
 			path = Coach;
@@ -419,6 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4E6161823BF04CA0034D11F /* CoachAddTeamViewController.swift in Sources */,
 				C4B15F6423BE81CA00875028 /* SignInViewController.swift in Sources */,
 				C49B7BAC23BE47AA00B5593B /* AppearanceHelper.swift in Sources */,
 				C4B15F8223BEF0CE00875028 /* ParentViewController.swift in Sources */,

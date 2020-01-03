@@ -1,5 +1,5 @@
 //
-//  CoachTeamsViewController.swift
+//  CoachAddTeamViewController.swift
 //  RegisterMyTeam
 //
 //  Created by Kobe McKee on 1/2/20.
@@ -8,12 +8,8 @@
 
 import UIKit
 
-class CoachTeamsViewController: UIViewController {
+class CoachAddTeamViewController: UIViewController {
 
-    
-    @IBOutlet weak var hamburgerBarButton: UIBarButtonItem!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,10 +17,6 @@ class CoachTeamsViewController: UIViewController {
     }
     
 
-    @IBAction func hamburgerButtonPressed(_ sender: Any) {
-    }
-    
-    
     /*
     // MARK: - Navigation
 

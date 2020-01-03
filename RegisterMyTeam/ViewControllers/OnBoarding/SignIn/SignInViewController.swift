@@ -32,7 +32,7 @@ class SignInViewController: UIViewController {
     
     
     @IBAction func signInButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "toParentUserFlow", sender: self)
+        performSegue(withIdentifier: "toCoachUserFlow", sender: self)
         
     }
     /*
